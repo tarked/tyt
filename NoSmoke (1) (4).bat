@@ -28,10 +28,10 @@ echo         *PMMMMMMhn. *x > M  .MMMM**""
 echo           ""**MMMMhx/.h/ .=*"                  
 
 
-set /p Ip=: 
+set /p Ip= 
 :top
 PING -n 1 %IP% | FIND "TTL="
-IF ERRORLEVEL 1 (SET in=0b & echo boofed ur ip bud.) 
+IF ERRORLEVEL 1 (SET in=0b & echo downed.) 
 set /a num=(%Random%%%9)+1
 color %num%
 ping -t 1 0 10 127.0.0.1 >nul
