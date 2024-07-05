@@ -30,7 +30,7 @@ echo           ""**MMMMhx/.h/ .=*"
 
 
 set /p Ip= 
-top:
+:top
 PING -n 1 %IP% | FIND "TTL="
 IF ERRORLEVEL 1 (SET in=0b & echo -) 
 set /a num=(%Random%%%9)+1
